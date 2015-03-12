@@ -1,0 +1,13 @@
+1. La principal ventaja que tenemos si montamos un servidor en una maquina es...
+	a) Es facil y rapido.
+	b) Necesitara menos trabajo de mantenimiento.
+	c) Complejidad en la instalacion y configuracion.
+	d) No requiere esfuerzo pero tiene coste de adquisicion.
+Respuesta: A.
+
+2. Una posible solucion para un sitio web mal planificado seria...
+	a) Configurar una sola maquina para un sitio con mucho trafico.
+	b) Configurar varias maquinas, dedicando una a cada servicio que este ofreciendo.
+	c) No analizar las necesidades.
+	d) Perchear el sistema a varios niveles.
+Respuesta: B.
