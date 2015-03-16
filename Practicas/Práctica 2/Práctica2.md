@@ -35,3 +35,7 @@ Mediante ssh-keygen podemos generar la clave, con la opción -t para el tipo de 
 
 *$ ssh-keygen -t dsa*
 
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/2.PNG)
+
+El siguiente paso es copiar la clave pública en la máquina secundaria.
+
