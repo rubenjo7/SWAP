@@ -39,3 +39,42 @@ Mediante ssh-keygen podemos generar la clave, con la opción -t para el tipo de 
 
 El siguiente paso es copiar la clave pública en la máquina secundaria.
 
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/3.PNG)
+
+A continuación ya podremos conectarnos a dicho equipo sin contraseña:
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/4.PNG)
+
+Para ejecutar comandos simplemente deberemos añadirlo al final del comando ssh
+para conectarnos:
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/5.PNG)
+
+Enviaremos un fichero entre ambas máquinas para corroborar el funcionamiento de la conexión. Para esto, he creado un archivo *nuevo.txt*
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/6.PNG)
+
+Comprobamos en la máquina 1 que se recibió el fichero.
+
+Concluido lo relacionado con la conexión ssh comenzaremos con el clonado de la carpeta /var/www entre ambas máquinas mediante la orden rsync.
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/7.PNG)
+
+Comprobamos que se han transferido los ficheros de la máquina principal a la secundaria para que ambos directorios sean totalmente iguales.
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/8.PNG)
+
+###Programar tareas con crontab
+
+Cron es un administrador procesos en segundo plano que ejecuta procesos en el
+instante indicado en el fichero crontab.
+
+Accedemos el fichero /etc/crontab de la máquina secundaria y añadiremos lo siguiente al fichero:
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/9.PNG)
+
+Reiniciamos el servicio con *service cron restart*.
+
+Esperamos unos minutos y realizamos el ls en la máquina secundaria:
+
+![imagen](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%202/10.PNG)
