@@ -120,11 +120,11 @@ esta ocasión será 2.
    
    Entramos en mysql y ejecutamos la siguiente sentencia (ojo con la IP del esclavo), para finalizar con la configuración en el maestro obtenemos los datos de la base de datos que vamos a replicar para posteriormente usarlos en la configuración del esclavo:
    
-    ![img](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%205/12.PNG)
+![img](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%205/12.PNG)
     
-    Volvemos a la máquina esclava, entramos en mysql y le damos los datos del maestro. Estos datos se pueden introducir desde el archivo de configuración si trabajamos con versiones inferiores a mysql 5.5.
+Volvemos a la máquina esclava, entramos en mysql y le damos los datos del maestro. Estos datos se pueden introducir desde el archivo de configuración si trabajamos con versiones inferiores a mysql 5.5.
     
-        ![img](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%205/13.PNG)
+ ![img](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%205/13.PNG)
    
    Para demostrar que todo esto que hemos realizado es verdad y que funciona lo único que tenemos que hacer es irnos al maestro introducir nuevos datos a la base de datos y luego irnos al esclavo y mirar esa misma base de datos y comprobar que las dos máquinas tienen la misma base de datos.
    
