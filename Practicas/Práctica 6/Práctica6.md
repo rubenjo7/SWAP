@@ -3,7 +3,7 @@ Rubén Jiménez Ortega
 
 Grupo: 3
 
-#Objetivos de la práctica
+##Objetivos de la práctica
 
 Los objetivos concretos de esta práctica son:
 
@@ -11,7 +11,7 @@ Los objetivos concretos de esta práctica son:
 
 • Hacer pruebas de retirar y añadir un disco y comprobar que el RAID sigue funcionando correctamente.
 
-#Configuración del RAID por sofware
+##Configuración del RAID por sofware
 
 Como se ha indicado, partimos de una máquina virtual ya instalada y configurada a la
 que, estando apagada, añadiremos dos discos del mismo tipo y capacidad.
@@ -42,7 +42,7 @@ Ahora ya podemos crear el directorio en el que se montará la unidad del RAID, y
  
  ![img](https://github.com/rubenjo7/SWAP/blob/master/Practicas/Pr%C3%A1ctica%206/5.PNG)
  
- #Simular un fallo en uno de los discos del RAID (mediante comandos con el mdadm).
+##Simular un fallo en uno de los discos del RAID (mediante comandos con el mdadm).
  
  Ahora vamos a simular un fallo de disco a propósito:
  
